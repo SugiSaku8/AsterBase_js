@@ -1,6 +1,6 @@
 {
   "name": "asterbase_js",
-  "version": "1.0.0",
+  "version": "0.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
