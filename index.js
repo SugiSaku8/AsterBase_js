@@ -6,12 +6,14 @@ const base = {
 			try {
 				let orjson = JSON.parse(file);
 			} catch (err) {
+                console.log("A flaw was found in the JSON file. \n Initialize the file.")
 				fs.appendFile(pass, "", function (err) {
 					console.warn(`Error:${err}`);
 				});
 			}
 		});
 	},
+    //AutoMalwareScan
 	ams: function () {
 		const scanFolder = "./";
 		const quarantineFolder = "/chest";
@@ -27,4 +29,7 @@ const base = {
 			},
 		);
 	},
+    
 };
+
+module.exports = bases;
